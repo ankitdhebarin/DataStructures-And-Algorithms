@@ -60,10 +60,50 @@ class Node():
 	def delete(self,data):
 		''' This function is used to delete data from the Tree '''
 
-		
-		
+		if self is None:
+			return None
+
+		''' Deleting only leaf nodes '''
+
+		if data < self.data:
+			self.left = self.left.delete(data)
+
+		elif data > self.data:
+			self.right = self.right.delete(data)
+			
+		else:
+
+			''' Deleting node with one child '''
+
+			if self.left is None:
+				temp = self.right
+				self = None
+				return temp
+
+			elif self.right is None:
+				temp = self.left
+				self = None
+				return temp
+
+			''' Deleting nodes with 2 children '''
+
+			temp = self.minValueNode(self.right)
+			self.data = temp.data
+			self.rightChild = self.rightChild.delete(temp.data)
+
+		return self
 
 
 root = Node(8)
 root.insert(3)
+root.insert(10)
+root.insert(1)
+root.insert(6)
+root.insert(4)
+root.insert(7)
+root.insert(14)
+root.insert(13)
+
 print(root.find(6))
+print(root.delete(4))
+print(root.find(4))
