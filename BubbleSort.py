@@ -21,7 +21,11 @@ bubbleSort(bubble)
 print(bubble)
 
 '''
+
 Complexity of BubbleSort 
 
 BestCase	AverageCase		WorstCase
-Omega(n)	 O(n^2)			 O(n^2)
+Omega(n)	 O(n^2)			 
+O(n^2)
+
+'''
