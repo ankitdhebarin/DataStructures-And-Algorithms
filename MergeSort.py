@@ -1,3 +1,9 @@
+#Author: Ankit Dhebar
+
+'''
+Merge Sort Algorithm
+'''
+
 def mergeSort(alist):
     print("Splitting ",alist)
     if len(alist)>1:
