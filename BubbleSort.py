@@ -19,3 +19,9 @@ def bubbleSort(alist):
 bubble = [54,26,93,17,77,31,44,55,20]
 bubbleSort(bubble)
 print(bubble)
+
+'''
+Complexity of BubbleSort 
+
+BestCase	AverageCase		WorstCase
+Omega(n)	 O(n^2)			 O(n^2)
