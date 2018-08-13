@@ -1,3 +1,15 @@
+# Author: Ankit Dhebar
+
+''' 
+Stacks Data Structure
+
+Time Complexity
+
+push() - O(1)
+pop()  - O(1)
+seach()- O(n)
+'''
+
 class Stack():
 
 	def __init__(self):
