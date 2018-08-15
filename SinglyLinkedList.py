@@ -10,7 +10,6 @@ Deletion = O(1)
 
 '''
 
-
 class Node():
 
 	def __init__(self,initdata):
