@@ -17,7 +17,7 @@ class BinaryTree():
 			self.leftchild = t
 
 
-	def insertRight(self, newNone):
+	def insertRight(self, newNode):
 
 		if self.rightchild == None:
 			self.rightchild = BinaryTree(newNode)
@@ -43,11 +43,9 @@ class BinaryTree():
 	def setrootVal(self,newroot):
 		self.key = newroot
 
+r = BinaryTree('1')
 
-
-r = BinaryTree('a')
-print(r.getrootVal())
-
-r.insertLeft('b')
-print(r.getLeftChild().getrootVal())
-
+r.insertLeft('2')
+r.insertRight('3')
+r.insertLeft('4')
+r.insertRight('5')
